@@ -1,28 +1,25 @@
-## Práctica 4: Eventos y Movimiento rectilíneo.
-## Objetivo: Resolver las siguientes actividades.
+## Práctica 5: Waypoints.
+## Objetivo: Realizar pruebas con el Sistema de Waypoints de Unity.
 
-1. Crear un script para mover al objeto jugador con los ejes Horizontal y Vertical.
-
-      ![gif ejercicio 1](/gifs/Ejercicio1.gif)
+ - Importar el asset u obtenerlo en la asset store.
+    - Iremos a la tienda de unity y descargaremos "Standard Assets (for Unity 2018.4)" del cual solo importaremos los siguientes archivos que nos interesan, en este caso serán los archivos Waypoint Progess Tracker y Waypoint Circuit.
+    
+    ![Paso 1](gifs/Captura5.png)
+    
+     - Seguido de esto colocaremos un suelo y un cubo al que seguir y para establercer el circutio usaremos unas esferas, creamos un Gameobject empty, en este pondremos las esferes como hijas suyas y le asignaremos el script de Waypoint Circuit y generará el circuito en base a como hemos colocado las esferas.
       
-2. Implementar una UI que permita configurar con qué velocidad te moverás: turbo o normal. También debe mostar la cantidad de objetos recolectados y si chocas con alguno especial restar fuerza. 
+   ![Paso 2](gifs/Captura1.png)
+   
+   ![Paso 3](gifs/Captura2.png)  
+   
+   ![Paso 4](gifs/Captura3.png)  
+    
+   
+ - Utiliza un personaje que realice el recorrido por un circuito que generes.
+    - En este caso he asignado un esfera de color rojo que seguirá al cubo por el circuito, para ello asignamos a la esfera el script Waypoint Progress Tracker, el cual ajustaremos un par de parametros para dar una sensación más agil a la esfera, a este mismo el asignamos el script del circuito y como target el cubo. Finalmente añadimos otro script para que realice el movimiento la esfera al seguir al cubo (Follow.cs).
+    
+   ![Paso 5](gifs/Captura4.png)  
+   
+- El resultado es el siguiente:
 
-      ![gif ejercicio 2_1](/gifs/Ejercicio2_1.gif)
-      ![gif ejercicio 2_2](/gifs/Ejercicio2_2.gif)
-      ![gif ejercicio 2_4](/gifs/Ejercicio2_4.gif)
-
-3. Agregar a tu escena un objeto que al ser recolectado por el jugador haga que otro objetos obstáculos se desplacen de su trayectoria. 
-       
-      ![gif ejercicio 2_3](/gifs/Ejercicio2_3.gif)
-       
-4. Agrega un objeto que te teletransporte a otra zona de la escena.
-
-      ![gif ejercicio 4](/gifs/Ejercicio4.gif)
-      
-5. Agrega un personaje que se dirija hacia un objetivo estático en la escena.
-
-      ![gif ejercicio 5](/gifs/Ejercicio5.gif)
-      
-6. Agrega un personaje que siga el movimiento del jugador. 
-
-      ![gif ejercicio 6](/gifs/Ejercicio6.gif)
+   ![Paso 6](gifs/Ejercicio.gif)  
